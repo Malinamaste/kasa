@@ -1,0 +1,52 @@
+.slider {
+  position: relative;
+  height: 415px;
+
+  @include media-inter($tablet, $desktop) {
+    height: 355px;
+  }
+
+  &__picture {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  &__previous,
+  &__next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+
+    @include media-inter($tablet, $desktop) {
+      font-size: 40px;
+    }
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__counter {
+    display: block;
+    color: $white;
+    position: absolute;
+    bottom: 25px;
+    font-weight: 500;
+    left: 50%;
+    font-size: 18px;
+
+    @include media-inter($tablet, $desktop) {
+      font-size: 20px;
+    }
+  }
+}

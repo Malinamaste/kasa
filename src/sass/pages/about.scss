@@ -1,0 +1,10 @@
+.about {
+  &__dropdowns {
+    max-width: 1023px;
+    margin: auto;
+
+    @include media-inter($tablet, $desktop) {
+      width: 90%;
+    }
+  }
+}

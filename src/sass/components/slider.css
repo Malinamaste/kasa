@@ -1,0 +1,36 @@
+.slider {
+  position: relative;
+  height: 415px;
+}
+.slider__picture {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+.slider__previous, .slider__next {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+.slider__next {
+  right: 0;
+}
+.slider__counter {
+  display: block;
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+  font-weight: 500;
+  left: 50%;
+  font-size: 18px;
+}/*# sourceMappingURL=slider.css.map */

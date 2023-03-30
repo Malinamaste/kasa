@@ -1,0 +1,20 @@
+.home {
+  &__gallery {
+      display: flex;
+      column-gap: 50px;
+      row-gap: 30px;
+      background: $container-color;
+      padding: 50px;
+      border-radius: 25px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @include media-inter($tablet, $desktop) {
+        column-gap: 35px;
+        row-gap: 20px;
+        padding: 40px;
+        justify-content: space-evenly;
+      }
+  }
+}

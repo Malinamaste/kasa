@@ -1,0 +1,12 @@
+.home__gallery {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 30px;
+  background: #f7f7f7;
+  padding: 50px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}/*# sourceMappingURL=home.css.map */

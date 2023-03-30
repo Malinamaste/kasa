@@ -1,0 +1,18 @@
+.tags {
+  background: #ff6060;
+  border-radius: 22px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 115px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tags__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}/*# sourceMappingURL=tags.css.map */

@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 50px;
+
+  @include media-inter($tablet, $desktop) {
+    margin: 30px 0 40px;
+  }
+
+  &__links {
+    display: flex;
+    width: 28%;
+    justify-content: space-around;
+
+    @include media-inter($tablet, $desktop) {
+      text-transform: uppercase;
+    }
+
+    &--active {
+      width: 50%;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    &--inactive {
+      width: 50%;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  &__img {
+    height: 47px;
+  }
+}

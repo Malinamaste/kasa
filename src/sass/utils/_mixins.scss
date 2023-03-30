@@ -1,0 +1,32 @@
+// general mixin => media-queries
+// @mixin media-query($key) {
+//   $size: map-get($breakpoints, $key);
+//   @media only screen and (min-width: $size) {
+//     @content;
+//   }
+// }
+
+// // mixins responsive
+@mixin media-max($_max-width) {
+  @media screen and (max-width: $_max-width) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin media-min($_min-width) {
+  @media screen and (min-width: $_min-width) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin media-inter($_min-width, $_max-width) {
+  @media screen and (min-width: $_min-width) and (max-width: $_max-width) {
+    & {
+      @content;
+    }
+  }
+}

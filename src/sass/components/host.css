@@ -1,0 +1,23 @@
+.host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.host__name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 52px;
+}
+.host__name--firstname, .host__name--lastname {
+  margin: 0;
+  text-align: end;
+}
+.host__picture {
+  border-radius: 50%;
+  width: 84px;
+  height: 84px;
+}/*# sourceMappingURL=host.css.map */
