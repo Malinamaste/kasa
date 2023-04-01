@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Host récupère 1 prop => host
 function Host({ host }) {
   const hostSplited = host.name.split(" ");
   const [name, lastname] = hostSplited;
@@ -11,7 +12,7 @@ function Host({ host }) {
         <p className="host__name--lastname">{lastname.trim()}</p>
       </div>
 
-      <img src={host.picture} alt="" className="host__picture" />
+      <img src={host.picture} alt="Propriétaire" className="host__picture" />
     </div>
   );
 };

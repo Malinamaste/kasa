@@ -1,4 +1,4 @@
-import imgBanner from '../assets/about_banner.png';
+import bannerAbout from '../assets/banner-about.png';
 import datasAbout from '../datas/datasAbout';
 import Collapse from '../components/Collapse';
 import HomeBanner from '../components/HomeBanner';
@@ -22,7 +22,7 @@ function About() {
 
   return (
     <section className="about">
-      <HomeBanner image={imgBanner} />
+      <HomeBanner image={bannerAbout} />
       <div className="about__dropdowns">
         <Collapse title="Fiabilité" content={content("fiability")} />
         <Collapse title="Respect" content={content("respect")} />

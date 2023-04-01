@@ -12,6 +12,12 @@
     height: 295px;
   }
 
+  @include media-inter($mobile, $tablet) {
+    height: 255px;
+    margin: 0;
+    width: 100%;
+  }
+
   &__img {
     width: inherit;
     height: inherit;

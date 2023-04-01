@@ -9,17 +9,30 @@
     @include media-inter($tablet, $desktop) {
       margin-top: 30px;
     }
+
+    @include media-inter($mobile, $tablet) {
+      margin-top: 15px;
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin: 0;
     font-size: 36px;
     font-weight: 500;
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 20px;
+    }
   }
 
   &__location {
     font-size: 18px;
     font-weight: 500;
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 14px;
+    }
   }
 
   &__tags {
@@ -31,6 +44,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @include media-inter($mobile, $tablet) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
   }
 
   &__dropdowns {
@@ -44,6 +63,12 @@
       margin-top: 50px;
     }
 
+    @include media-inter($mobile, $tablet) {
+      margin-top: 13px;
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+
     & > div {
       width: 582px;
 
@@ -51,9 +76,27 @@
         width: 100%;
       }
 
+      @include media-inter($mobile, $tablet) {
+        width: 100%;
+        margin-bottom: 28px;
+      }
+
       & > button {
           font-size: 18px;
           border-radius: 10px;
+
+          @include media-inter($mobile, $tablet) {
+            height: 30px;
+            border-radius: 5px;
+            font-size: 13px;
+            padding: 0 13px;
+          }
+
+          & > img.collapse__arrow {
+            @include media-inter($mobile, $tablet) {
+              width: 15px;
+            }
+          }
         }
 
       & > div.collapse__content {
@@ -62,6 +105,10 @@
         & > p, ul {
           font-size: 18px;
           line-height: 142.6%;
+
+          @include media-inter($mobile, $tablet) {
+            font-size: 12px;
+          }
         }
       }
 
@@ -69,6 +116,10 @@
         padding: 30px;
         min-height: 100px;
         max-height: 249px;
+
+        @include media-inter($mobile, $tablet) {
+          padding: 20px;
+        }
       }
     }
   }

@@ -11,6 +11,12 @@
     margin-bottom: 60px;
   }
 
+  @include media-inter($mobile, $tablet) {
+    height: 111px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+  }
+
   &__img {
     width: inherit;
     height: inherit;
@@ -34,6 +40,13 @@
       bottom: 34%;
       right: 15%;
     }
+
+    @include media-inter($mobile, $tablet) {
+      left: 8.6%;
+      right: 32.53%;
+      top: 12.04%;
+      font-size: 21px;
+    }
   }
 
   &__overlay {
@@ -49,6 +62,12 @@
     >.hbanner__img {
       transform: scale(1.05);
     }
+  }
+}
+
+.about > .hbanner {
+  @include media-inter($mobile, $tablet) {
+    height: 223px;
   }
 }
 

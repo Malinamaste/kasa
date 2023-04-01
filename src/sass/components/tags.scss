@@ -16,9 +16,20 @@
     border-radius: 15px;
   }
 
+  @include media-inter($mobile, $tablet) {
+    min-width: 84px;
+    height: 18px;
+    border-radius: 5px;
+    padding: 5px 9px;
+  }
+
   &__text {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 10px;
+    }
   }
 }

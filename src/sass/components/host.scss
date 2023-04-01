@@ -12,6 +12,12 @@
     justify-content: space-between;
     min-height: 52px;
 
+    @include media-inter($mobile, $tablet) {
+      font-size: 12px;
+      justify-content: center;
+      margin-right: 14px;
+    }
+
     &--firstname, &--lastname {
       margin: 0;
       text-align: end;
@@ -22,5 +28,10 @@
     border-radius: 50%;
     width: 84px;
     height: 84px;
+
+    @include media-inter($mobile, $tablet) {
+      width: 44px;
+      height: 44px;
+    }
   }
 }

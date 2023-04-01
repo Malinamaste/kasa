@@ -7,6 +7,10 @@
     margin: 30px 0 40px;
   }
 
+  @include media-inter($mobile, $tablet) {
+    margin: 20px 0;
+  }
+
   &__links {
     display: flex;
     width: 28%;
@@ -16,7 +20,13 @@
       text-transform: uppercase;
     }
 
-    &--active {
+    @include media-inter($mobile, $tablet) {
+      font-size: 12px;
+      text-transform: uppercase;
+      width: 47%;
+    }
+
+    &--active, &--inactive {
       width: 50%;
       color: $primary-color;
       display: flex;
@@ -27,13 +37,7 @@
     }
 
     &--inactive {
-      width: 50%;
-      color: $primary-color;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
       text-decoration: none;
-      font-weight: 500;
     }
   }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Thumbnails({image, title}) {
+// Thumbnails récupère 2 props => image & title
+function Thumbnails({ image, title }) {
   return (
     <div className="thumb">
       <img src={image} alt="" className="thumb__img" />

@@ -3,11 +3,14 @@ body {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0 7%;
 
   @include media-inter($tablet, $desktop) {
     margin: 0 4%;
+  }
+
+  @include media-inter($mobile, $tablet) {
+    margin: 0 5%;
   }
 }
 

@@ -6,6 +6,10 @@
     height: 355px;
   }
 
+  @include media-inter($mobile, $tablet) {
+    height: 255px;
+  }
+
   &__picture {
     width: inherit;
     height: inherit;
@@ -30,6 +34,11 @@
     @include media-inter($tablet, $desktop) {
       font-size: 40px;
     }
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 12px;
+      margin: 0 8px;
+    }
   }
 
   &__next {
@@ -47,6 +56,10 @@
 
     @include media-inter($tablet, $desktop) {
       font-size: 20px;
+    }
+
+    @include media-inter($mobile, $tablet) {
+      display: none;
     }
   }
 }

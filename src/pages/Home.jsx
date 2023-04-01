@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-import imgBanner from '../assets/home_banner.png';
+import bannerHome from '../assets/banner-home.png';
 import products from '../datas/data.json';
 import datasAbout from '../datas/datasAbout';
 import HomeBanner from '../components/HomeBanner';
@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home">
       <div className="home__banner">
-        <HomeBanner image={imgBanner} title={slogan}/>
+        <HomeBanner image={bannerHome} title={slogan}/>
       </div>
       <section className="home__gallery">
         {products.map((product) => {

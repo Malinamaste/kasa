@@ -6,5 +6,9 @@
     @include media-inter($tablet, $desktop) {
       width: 90%;
     }
+
+    @include media-inter($mobile, $tablet) {
+      margin-bottom: 70px;
+    }
   }
 }

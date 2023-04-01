@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+
 // import des icônes natives de react-icons
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+// Slideshow récupère 1 prop => slides
 function Slideshow({ slides }) {
   const length = slides.length;
   // on définit l'index de la première slide

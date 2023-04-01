@@ -8,6 +8,10 @@
     margin-top: 10%;
   }
 
+  @include media-inter($mobile, $tablet) {
+    margin-top: 200px;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,10 @@
     @include media-inter($tablet, $desktop) {
       font-size: 200px;
     }
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 96px;
+    }
   }
 
   &__text {
@@ -30,6 +38,14 @@
     @include media-inter($tablet, $desktop) {
       font-size: 25px;
     }
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 18px;
+      text-align: center;
+      padding: 0 17%;
+      line-height: 142.6%;
+      margin: 0;
+    }
   }
 
   &__link {
@@ -37,5 +53,10 @@
     font-size: 18px;
     font-weight: 500;
     margin: 5% 0;
+
+    @include media-inter($mobile, $tablet) {
+      margin-top: 133px;
+      font-size: 14px;
+    }
   }
 }

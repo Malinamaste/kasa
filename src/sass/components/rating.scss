@@ -4,5 +4,10 @@
 
   &__star {
     margin-right: 5px;
+
+    @include media-inter($mobile, $tablet) {
+      width: 20px;
+      margin-right: 2px;
+    }
   }
 }

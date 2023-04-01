@@ -16,5 +16,25 @@
         padding: 40px;
         justify-content: space-evenly;
       }
+
+      @include media-inter($mobile, $tablet) {
+        padding: 0;
+        background: none;
+        row-gap: 22px;
+      }
+
+      & > article {
+        @include media-inter($mobile, $tablet) {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+
+        & > a {
+          @include media-inter($mobile, $tablet) {
+            width: 100%;
+          }
+        }
+      }
   }
 }

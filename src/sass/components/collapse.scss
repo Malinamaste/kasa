@@ -6,6 +6,10 @@
     margin-bottom: 50px;
   }
 
+  @include media-inter($mobile, $tablet) {
+    margin-bottom: 20px;
+  }
+
   @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
       $delay: 120ms * $i;
@@ -29,12 +33,21 @@
     z-index: 1;
     font-size: 24px;
     padding: 0 20px;
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 16px;
+      height: 33px;
+    }
   }
 
   &__arrow {
     pointer-events: none;
     transition: transform 300ms;
     margin: 0;
+
+    @include media-inter($mobile, $tablet) {
+      width: 14px;
+    }
   }
 
   &__content {
@@ -54,6 +67,10 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 142.6%;
+
+    @include media-inter($mobile, $tablet) {
+      font-size: 14px;
+    }
   }
 
   &__list {
@@ -76,6 +93,10 @@
   max-height: 500px;
   padding: 24px 12px 12px 12px;
   transition: max-height 250ms ease-in-out, padding 300ms ease-in-out;
+
+  @include media-inter($mobile, $tablet) {
+    padding: 23px 9px 53px 12px;
+  }
 }
 
 @keyframes show-up {
