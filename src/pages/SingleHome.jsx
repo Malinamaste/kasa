@@ -16,12 +16,11 @@ function SingleHome() {
   // on récupère le logement associé à l'id de l'URL
   const product = products.find((product) => product.id === id);
 
-  const { title, location, rating, host, equipments, description, pictures } =
-    product;
-
   if (!product) {
     return <Error />;
   }
+  
+  const { title, location, rating, host, equipments, description, pictures } = product;
 
   return (
     <section className="singleproduct">
